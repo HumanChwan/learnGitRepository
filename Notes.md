@@ -131,41 +131,41 @@ To setup git for user:
 - Read/Write Access to github for computer - 
 	- To create key
 	```ssh-keygen -t rsa -b 4096 -C "your_email@example.com"```
-		It will ask for file to save the key in
-			press enter
-		It will ask for passphrase
-			Leave it empty (press enter)
-		It will ask for passphrase
-			press enter 
+		- It will ask for file to save the key in
+			- press enter  
+		- It will ask for passphrase  
+			- Leave it empty (press enter)  
+		- It will ask for passphrase  
+			- press enter 
 	
-	- To deploy key
-		``` eval `ssh-agent -s` ```
-			This will give agent process id
-		```ssh-add ~/.ssh/id_rsa```
-			This adds key to your git
+	- To deploy key  
+		``` eval `ssh-agent -s` ```  
+			This will give agent process id  
+		```ssh-add ~/.ssh/id_rsa```  
+			This adds key to your git  
 	
-	- To add key to github account
-		```cat ~/.ssh/id_rsa.pub```
-			shows content of key
-		Copy content of key and paste it in new key on github 	
+	- To add key to github account  
+		```cat ~/.ssh/id_rsa.pub```  
+			shows content of key  
+		Copy content of key and paste it in new key on github   	
 		
-- `git remote set-url origin <url>`
-	//Thanks for your contribution
-	Changes url of origin
+- `git remote set-url origin <url>`  
+	//Thanks for your contribution  
+	Changes url of origin  
 	
-- `git clone <url> folderName`
+- `git clone <url> folderName`  
 	Clones code in url to folder folderName
 	
-- `touch .gitignore`
-	Any file name written in gitignore file will not be pushed or pulled
-	Also won't be committed
-		If only file name is written then it will ignore all files of that name
-		If /fileName is written then it will only ignore that file from current directory
-		If *.extension is written then it will ignore all files with that extension
+- `touch .gitignore`  
+	Any file name written in gitignore file will not be pushed or pulled  
+	Also won't be committed  
+		If only file name is written then it will ignore all files of that name  
+		If /fileName is written then it will only ignore that file from current directory  
+		If *.extension is written then it will ignore all files with that extension  
 		
 		
 		
-- Push/Pull
+- **Push/Pull**:  
 	Once a repository has been forked to your account, you can then commit changes to it
 	Create a new directory where you will work on the project
 
